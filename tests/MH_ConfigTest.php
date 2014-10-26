@@ -23,18 +23,19 @@ class MH_ConfigTest extends PHPUnit_Framework_TestCase {
     public function testOverrideFalse() {
         $config = new \MH\MH_Config();
 
-        $config->_author = "Matteo Hertel";
+        $config->_author = "Test Testington";
         $this->assertEquals("Matteo Hertel", $config->_author);
     }
 
     public function testOverrideTrue() {
-        $config = new \MH\MH_Config();
 
+        $config = new \MH\MH_Config();
+        $config->override = true;
         $config->_author = "Test Testington";
         $this->assertEquals("Test Testington", $config->_author);
     }
 
-    public function testPusblic() {
+    public function testPublic() {
         $config = new \MH\MH_Config();
         $time = time();
         $config->lastUpdate = $time;
