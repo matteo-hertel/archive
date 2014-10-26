@@ -52,7 +52,7 @@ class MH_ConfigTest extends PHPUnit_Framework_TestCase {
         sleep(5);
 
         $config2 = new \MH\MH_Config(__DIR__ . "test.json");
-        $this->assertNotEquals($time, $config->_destructorTime);
+        $this->assertNotEquals($time, $config2->_destructorTime);
     }
 
     public function testCleanUp() {
