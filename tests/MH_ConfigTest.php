@@ -1,10 +1,10 @@
 <?php
 
-require '../vendor/autoload.php';
+require 'vendor/autoload.php';
 
 class MH_ConfigTest extends PHPUnit_Framework_TestCase {
 
-    public function testMatrix2x2() {
+    public function initTest() {
 
         $configTest = new MH_Config();
 
