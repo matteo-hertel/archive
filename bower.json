@@ -1,0 +1,26 @@
+{
+  "name": "PolymerCourse",
+  "authors": [
+    "Matteo Hertel <info@matteohertel.com>
+  ],
+  "description": "Source code for the Polymer course",
+  "main": "",
+  "moduleType": [],
+  "keywords": [
+    "polymer",
+    "egghead"
+  ],
+  "license": "MIT",
+  "homepage": "http://matteohertel.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "~1.2.3"
+  }
+}
