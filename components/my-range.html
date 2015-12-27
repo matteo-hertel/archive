@@ -1,0 +1,28 @@
+<dom-module id="my-range">
+    <template>
+        <input type="range" value="{{value::input}}" max="100" min="0" />
+    </template>
+    <script>
+        Polymer({
+            is: "my-range",
+            properties: {
+                value: {
+                    type: Number,
+                    observer: "handleInput"
+                }
+            },
+            ready: function() {
+                this.addEventListener("valueChanged", function(e) {
+                    console.log(e.detail.increased);
+                });
+            },
+            handleInput: function(newVal, OldVal) {
+                if (OldVal) {
+                    this.fire("valueChanged", {
+                        increased: newVal > OldVal
+                    });
+                }
+            }
+        });
+    </script>
+</dom-module>
