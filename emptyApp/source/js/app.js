@@ -1,6 +1,6 @@
 new Vue({
 
-    el: 'body',
+    el: '#demo',
     data: {
         heading: "Hello"
     }

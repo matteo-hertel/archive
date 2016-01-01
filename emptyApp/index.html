@@ -16,12 +16,19 @@
 </head>
 
 <body>
-    <h1>Hello, World!</h1>
-    <p>{{heading}}</p>
-    <input v-model="heading" class="form-control" />
-    <pre>
-        {{$data | json}}
-    </pre>
+    <div id="demo" class="container">
+        <di class="row">
+            <div class="col-md-12">
+                <h1>Hello, World!</h1>
+                <p>{{heading}}</p>
+                <input v-model="heading" class="form-control" />
+                <pre>
+                    {{$data | json}}
+                </pre>
+            </div>
+        </di>
+    </div>
+
     <script type="text/javascript" src="/bower_components/vue/dist/vue.min.js"></script>
     <script type="text/javascript" src="./source/js/app.js"></script>
 </body>
