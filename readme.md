@@ -6,3 +6,4 @@ Lesson from [Laracast.com](https://laracasts.com/series/learning-vuejs/episodes/
 *   ~~Lesson 2: Rendering Lists of Data~~
 *   ~~Lesson 3: Vue's Event System~~
 *   ~~Lesson 4: Easy Filtering and Ordering~~
+*   ~~Lesson 5: Custom Filters~~
