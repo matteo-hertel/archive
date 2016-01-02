@@ -5,3 +5,4 @@ Lesson from [Laracast.com](https://laracasts.com/series/learning-vuejs/episodes/
 *   ~~Lesson 1: Form Inputs and Two-Way Binding~~
 *   ~~Lesson 2: Rendering Lists of Data~~
 *   ~~Lesson 3: Vue's Event System~~
+*   ~~Lesson 4: Easy Filtering and Ordering~~
