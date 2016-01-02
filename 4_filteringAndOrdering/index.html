@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content=" " />
+    <meta name="author" content=" " />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="MobileOptimized" content="320" />
+    <!-- Use maximum-scale and user-scalable at your own risk. It disables pinch/zoom. Think about usability/accessibility before including.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div id="demo" class="container">
+        <di class="row">
+            <div class="col-md-12">
+                <input type="text" class="form-control" v-model="search">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th v-repeat="column: columns">
+                                <a href="#" v-on="click: sortBy(column)" v-class="text-danger: sortKey === column">
+                                    {{column | capitalize}}
+                                </a>
+                            </th>
+                            <!-- <th>
+                                <a href="#" v-on="click: sortBy('name')" v-class="text-danger: sortKey === 'name'">Name</a></th>
+                            <th>
+                                <a href="#" v-on="click: sortBy('age')"  v-class="text-danger: sortKey === 'age'">Age</a></th> -->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr v-repeat="people | filterBy search | orderBy sortKey reverse">
+                            <td>
+                                {{name}}
+                            </td>
+                            <td>
+                                {{age}}
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </di>
+    </div>
+    <!-- Need to use and old version of Vue for this lesson -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/0.11.10/vue.min.js"></script>
+    <!-- <script type="text/javascript" src="/bower_components/vue/dist/vue.min.js"></script> -->
+    <script type="text/javascript" src="./source/js/app.js"></script>
+</body>
+
+</html>
