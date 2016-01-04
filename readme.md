@@ -7,3 +7,4 @@ Lesson from [Laracast.com](https://laracasts.com/series/learning-vuejs/episodes/
 - ~~Lesson 5: Custom Filters~~
 - ~~Lesson 6: Ajax~~ I didn't want to add the backend, so I've created a bespoke app using the public [Star Wars API](http://swapi.co)
 - ~~Lesson 7: Components~~
+- ~~Lesson 8: Props~~
