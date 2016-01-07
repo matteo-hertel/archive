@@ -10,7 +10,3 @@ Lesson from [Laracast.com](https://laracasts.com/series/learning-vuejs/episodes/
 - ~~Lesson 8: Props~~
 - ~~Lesson 9: Directives~~
 - ~~Lesson 10: Routing~~
-
-## Course 2 ##
-Vue 1.0
-Lesson from [Laracast.com](https://laracasts.com/series/learning-vue-step-by-step)
