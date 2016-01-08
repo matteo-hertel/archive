@@ -1,7 +1,7 @@
 # VueJS
 Lesson from [Laracast.com](https://laracasts.com/series/learning-vue-step-by-step)
 - ~~Hello Databinding~~
-- Vue Show
+- ~~Vue Show~~
 - Event Handling
 - A Peek into Components
 - Computed Properties
