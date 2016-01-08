@@ -2,7 +2,7 @@
 Lesson from [Laracast.com](https://laracasts.com/series/learning-vue-step-by-step)
 - ~~Hello Databinding~~
 - ~~Vue Show~~
-- Event Handling
+- ~~Event Handling~~
 - A Peek into Components
 - Computed Properties
 - Subscription Plans Exercise
