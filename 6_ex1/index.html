@@ -19,15 +19,23 @@
     <div id="demo" class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1>Hello, World!</h1>
-                <p>{{heading}}</p>
-                <input v-model="heading" class="form-control" />
-                <pre>
-                    {{$data | json}}
-                </pre>
+                <div class="row" v-for="plan in plans">
+                    <plan :plan="plan" :active.sync="active"></plan>
+                </div>
+
             </div>
         </div>
     </div>
+
+    <template id="planTempalte">
+        <div class="col-sm-3">{{plan.name}}</div>
+        <div class="col-sm-3">{{plan.price | currency "£"}} / month</div>
+        <div class="col-sm-3">
+            <button v-show="plan.name !== active.name" @click="setActivePlan">
+                {{isUpgrade ? "Upgrade" : "Downgrade"}}</button>
+            <span v-else>Current Plan</span>
+        </div>
+    </template>
 
     <script type="text/javascript" src="/bower_components/vue/dist/vue.js"></script>
     <script type="text/javascript" src="./source/js/app.js"></script>
