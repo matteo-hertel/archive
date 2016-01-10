@@ -5,7 +5,7 @@ Lesson from [Laracast.com](https://laracasts.com/series/learning-vue-step-by-ste
 - ~~Event Handling~~
 - ~~A Peek into Components~~
 - ~~Computed Properties~~
-- Subscription Plans Exercise
+- ~~Subscription Plans Exercise~~
 - Rendering and Working With Lists
 - Custom Components 101
 - Vue Makes it so Easy
