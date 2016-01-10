@@ -6,7 +6,7 @@ Lesson from [Laracast.com](https://laracasts.com/series/learning-vue-step-by-ste
 - ~~A Peek into Components~~
 - ~~Computed Properties~~
 - ~~Subscription Plans Exercise~~
-- Rendering and Working With Lists
+- ~~Rendering and Working With Lists~~
 - Custom Components 101
 - Vue Makes it so Easy
 - Vue, Laravel, and AJAX
