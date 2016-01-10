@@ -4,7 +4,7 @@ Lesson from [Laracast.com](https://laracasts.com/series/learning-vue-step-by-ste
 - ~~Vue Show~~
 - ~~Event Handling~~
 - ~~A Peek into Components~~
-- Computed Properties
+- ~~Computed Properties~~
 - Subscription Plans Exercise
 - Rendering and Working With Lists
 - Custom Components 101
