@@ -8,7 +8,7 @@ Lesson from [Laracast.com](https://laracasts.com/series/learning-vue-step-by-ste
 - ~~Subscription Plans Exercise~~
 - ~~Rendering and Working With Lists~~
 - ~~Custom Components 101~~
-- Vue Makes it so Easy
+- ~~Vue Makes it so Easy~~
 - Vue, Laravel, and AJAX
 - Vue Resource
 - Component Exercise #1
