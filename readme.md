@@ -11,6 +11,6 @@ Lesson from [Laracast.com](https://laracasts.com/series/learning-vue-step-by-ste
 - ~~Vue Makes it so Easy~~
 - Vue, Laravel, and AJAX
 - Vue Resource
-- Component Exercise #1
+- ~~Component Exercise #1~~
 - Vue and Laravel Workflow
 - Vue Filter Essentials
