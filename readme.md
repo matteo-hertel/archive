@@ -13,4 +13,4 @@ Lesson from [Laracast.com](https://laracasts.com/series/learning-vue-step-by-ste
 - ~~Vue Resource~~
 - ~~Component Exercise #1~~
 - ~~Vue and Laravel Workflow~~
-- Vue Filter Essentials
+- ~~Vue Filter Essentials~~
