@@ -1,6 +1,6 @@
 # RegExp
 Lesson from [egghead.io](https://egghead.io/series/regex-in-javascript)
-- 01  Introduction
+- ~~01  Introduction~~
 - 02  Find Plain Text Patterns
 - 03  Find Repeated Patterns
 - 04  Find Sets of Characters
