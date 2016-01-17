@@ -1,8 +1,8 @@
 # RegExp
 Lesson from [egghead.io](https://egghead.io/series/regex-in-javascript)
 - ~~01  Introduction~~
-- ~~ 02  Find Plain Text Patterns ~~
-- 03  Find Repeated Patterns
+- ~~02  Find Plain Text Patterns~~
+- ~~03  Find Repeated Patterns~~
 - 04  Find Sets of Characters
 - 05  Use Shorthand to Find Common Sets of Characters
 - 06  Find Groups of Characters
