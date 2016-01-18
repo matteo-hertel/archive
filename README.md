@@ -1,1 +1,1 @@
-# PHPDesignPatterns
+# PHPDesignPatterns course
