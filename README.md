@@ -1,4 +1,4 @@
 # PHPDesignPatterns course
-##based on the Lynda.com course
+Lesson from [Lynda.com](http://www.lynda.com/PHP-tutorials/Design-Patterns-PHP/186870-2.html) course
 
-01. ~~Active records pattern~~
+- ~~Active records pattern~~
