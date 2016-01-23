@@ -15,4 +15,4 @@ Lesson from [Laracast.com](https://laracasts.com/series/learning-vue-step-by-ste
 - ~~Vue and Laravel Workflow~~
 - ~~Vue Filter Essentials~~
 - ~~Managing Custom Events~~
-- Custom Directives
+- ~~Custom Directives~~
