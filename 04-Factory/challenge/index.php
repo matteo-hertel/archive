@@ -7,13 +7,14 @@
  *   by Keith Casey. If you've received this code without seeing the videos, go watch the
  *   videos. It will make way more sense and be more useful in general.
  */
-
+use \Shapes\Shape;
 include_once 'shapes.php';
 
 $shape = Shape::getShape('circle', 3);
 // This should output 9*Pi
 echo $shape->getArea();
 
+echo "<br />";
 
 $shape = Shape::getShape('square', 3);
 // This should output 9
