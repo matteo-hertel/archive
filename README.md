@@ -4,7 +4,7 @@ Lesson from [Lynda.com](http://www.lynda.com/PHP-tutorials/Design-Patterns-PHP/1
 - ~~Adapter~~
 - ~~Decorator~~
 - ~~Factory~~
-- Mock-Objects
+- ~~Mock-Objects~~
 - MVCs
 - ADR
 - Pub-Sub
