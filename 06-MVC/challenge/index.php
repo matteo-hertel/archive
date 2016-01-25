@@ -13,13 +13,12 @@
  *      index.php?m=greeting&a=hello
  *      index.php?m=greeting&a=goodbye
  */
-?>
 
-<ul>
-    <li>
-        <a href="hello.php">Say Hello</a>
-    </li>
-    <li>
-        <a href="goodbye.php">Say Goodbye</a>
-    </li>
-</ul>
+define("URL", "/PHPDesignPatterns/06-MVC/challenge");
+
+include __DIR__ . "/controllers/MainController.php";
+
+$controller = new MainController(filter_input(INPUT_GET, "a", FILTER_SANITIZE_STRING));
+
+$controller->handle();
+?>
