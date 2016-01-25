@@ -5,7 +5,7 @@ Lesson from [Lynda.com](http://www.lynda.com/PHP-tutorials/Design-Patterns-PHP/1
 - ~~Decorator~~
 - ~~Factory~~
 - ~~Mock-Objects~~
-- MVCs
+- ~~MVCs~~
 - ADR
 - Pub-Sub
 - Singleton
