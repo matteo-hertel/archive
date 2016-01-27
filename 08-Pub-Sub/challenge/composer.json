@@ -1,0 +1,14 @@
+{
+    "require": {
+        "symfony/event-dispatcher": "^3.0"
+    },
+    "autoload": {
+
+    	        "psr-4": {
+
+    	            "Test\\": "Test"
+
+    	        }
+
+    	    }
+}

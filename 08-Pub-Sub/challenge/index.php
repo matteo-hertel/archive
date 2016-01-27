@@ -8,18 +8,19 @@
  *   videos. It will make way more sense and be more useful in general.
  */
 
-include_once 'component.php';
+include_once __DIR__ . '/vendor/autoload.php';
 
-$componentA = new Component('Component A');
-$componentB = new Component('Component B');
-$componentC = new Component('Component C');
+use Symfony\Component\EventDispatcher\EventDispatcher;
 
-/**
- * Something important happens to Module A and so B and C need to take action so each
- *   has to be listed out individually.
- */
 
-$i = 0;
-$componentA->addOneAndEcho($i++);
-$componentB->addOneAndEcho($i++);
-$componentC->addOneAndEcho($i++);
+ $i = 0;
+$dispatcher = new EventDispatcher();
+
+$listener = new Test\Listener();
+$dispatcher->addListener('event', array($listener, 'onEvent'));
+
+
+$dispatcher->dispatch("event", new Test\Component("Component A", $i++));
+$dispatcher->dispatch("event", new Test\ComponentWithEvents("Component B", $i++));
+$dispatcher->dispatch("event", new Test\Component("Component C", $i++));
+$dispatcher->dispatch("event", new Test\Component("Component F", $i++));
