@@ -7,7 +7,7 @@ Lesson from [Lynda.com](http://www.lynda.com/PHP-tutorials/Design-Patterns-PHP/1
 - ~~Mock-Objects~~
 - ~~MVCs~~
 - ~~ADR~~
-- Pub-Sub
+- ~~Pub-Sub~~
 - Singleton
 - Strategy
 - Table-Data
