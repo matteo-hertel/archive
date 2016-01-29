@@ -16,4 +16,4 @@ Lesson from [Laracast.com](https://laracasts.com/series/learning-vue-step-by-ste
 - ~~Vue Filter Essentials~~
 - ~~Managing Custom Events~~
 - ~~Custom Directives~~
-- Vue Transitions and Animations
+- ~~Vue Transitions and Animations~~
