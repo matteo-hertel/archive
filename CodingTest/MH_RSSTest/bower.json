@@ -1,0 +1,11 @@
+{
+  "name": "RSSFeedTest",
+  "version": "0.0.1",
+  "dependencies": {
+    "ui": "https://github.com/matteo-hertel/MH_UI.git",
+    "bootstrap": "~3.0.0",
+    "modernizr": "~2.6.2",
+    "jquery": "~1.10.2"
+  },
+  "private": true
+}

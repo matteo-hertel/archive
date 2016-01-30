@@ -1,0 +1,50 @@
+{
+    "event": "suiteStart",
+    "suite": "URLTest",
+    "tests": 3
+}{
+    "event": "testStart",
+    "suite": "URLTest",
+    "test": "URLTest::testSpaces"
+}{
+    "event": "test",
+    "suite": "URLTest",
+    "test": "URLTest::testSpaces",
+    "status": "pass",
+    "time": 0.010367155075073,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "URLTest",
+    "test": "URLTest::testBadCharacters"
+}{
+    "event": "test",
+    "suite": "URLTest",
+    "test": "URLTest::testBadCharacters",
+    "status": "pass",
+    "time": 0.0013699531555176,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "URLTest",
+    "test": "URLTest::testNoUppercaseLetters"
+}{
+    "event": "test",
+    "suite": "URLTest",
+    "test": "URLTest::testNoUppercaseLetters",
+    "status": "pass",
+    "time": 0.001971960067749,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}

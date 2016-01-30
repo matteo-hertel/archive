@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Unit tests</title>
+  <link rel="stylesheet" href="//code.jquery.com/qunit/qunit-1.14.0.css">
+</head>
+<body>
+  <div id="qunit"></div>
+  <div id="qunit-fixture"></div>
+  <script src="//code.jquery.com/qunit/qunit-1.14.0.js"></script>
+  <script src="js/MH_primeTable.js"></script>
+    <script type="text/javascript">
+        QUnit.test( "Object instantiated", function( assert ) {
+          assert.ok( typeof MH_primeTable === "object", "MH_primeTable is an object" );
+        });
+        
+        QUnit.test( "Limit created", function( assert ) {
+          assert.ok( MH_primeTable.config.limit > 0, "Limit successfully set" );
+        });
+        
+        QUnit.test( "Limit enforced", function( assert ) {
+            MH_primeTable.config.input = {value : 100000};
+            assert.ok( function(){
+                return MH_primeTable.eventFunction() === false;
+            }, "Limit check ok" );
+            MH_primeTable.config.input = null;
+        });
+        
+        
+        QUnit.test( "Integer check", function( assert ) {
+			assert.ok( MH_primeTable.validation(8), "8 is an integer" );
+            assert.ok( MH_primeTable.validation("8"), "8 as string is still an integer" );
+            assert.ok( !MH_primeTable.validation("test"), "test is not an integer" );
+            assert.ok( !MH_primeTable.validation("ten"), "ten is not an integer" );
+        });
+       
+
+    	QUnit.asyncTest( "Fetch of the data", function( assert ) {
+          expect( 1 );
+
+          setTimeout(function() {
+            assert.ok( !!MH_primeTable.config.numbers.length, "The container of the prime numbers is an array" );
+            QUnit.start();
+          }, 1000);
+        });
+        
+        QUnit.asyncTest( "500th prime number", function( assert ) {
+          expect( 1 );
+
+          setTimeout(function() {
+            assert.ok( MH_primeTable.config.numbers[500] == 3581, "The 500th prime number is 3581, the value in the array is right" );
+            QUnit.start();
+          }, 1000);
+        })
+    </script>
+</body>
+</html>
