@@ -1,11 +1,12 @@
 <?php
+
 namespace Blog\Responder;
 
 class BlogBrowseResponder extends AbstractBlogResponder
 {
     protected $available = array(
         'text/html' => '',
-        'application/json' => '.json'
+        'application/json' => '.json',
     );
 
     protected $payload_method = array(

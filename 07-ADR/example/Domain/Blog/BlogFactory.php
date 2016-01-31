@@ -1,4 +1,5 @@
 <?php
+
 namespace Domain\Blog;
 
 class BlogFactory
@@ -14,6 +15,7 @@ class BlogFactory
         foreach ($rows as $row) {
             $collection[] = $this->newEntity($row);
         }
+
         return $collection;
     }
 }

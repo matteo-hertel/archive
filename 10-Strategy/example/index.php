@@ -1,13 +1,12 @@
 <?php
 
 /**
- * Copyright (c) 2014 Keith Casey
+ * Copyright (c) 2014 Keith Casey.
  *
  * This code is designed to accompany the lynda.com video course "Design Patterns in PHP"
  *   by Keith Casey. If you've received this code without seeing the videos, go watch the
  *   videos. It will make way more sense and be more useful in general.
  */
-
 require 'vendor/autoload.php';
 
 $input = "This is a string of text that should be filtered & handle 's properly.";

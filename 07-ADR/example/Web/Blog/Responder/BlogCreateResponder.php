@@ -1,4 +1,5 @@
 <?php
+
 namespace Blog\Responder;
 
 class BlogCreateResponder extends AbstractBlogResponder

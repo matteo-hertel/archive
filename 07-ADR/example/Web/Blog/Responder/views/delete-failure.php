@@ -1,4 +1,6 @@
-<?php use Aura\Html\Escaper as e; ?>
+<?php use Aura\Html\Escaper as e;
+
+?>
 
 <p>
     Failed to delete blog post

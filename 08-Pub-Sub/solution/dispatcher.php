@@ -1,18 +1,19 @@
 <?php
 
 /**
- * Copyright (c) 2014 Keith Casey
+ * Copyright (c) 2014 Keith Casey.
  *
  * This code is designed to accompany the lynda.com video course "Design Patterns in PHP"
  *   by Keith Casey. If you've received this code without seeing the videos, go watch the
  *   videos. It will make way more sense and be more useful in general.
  */
-
-class Dispatcher
+class dispatcher
 {
     protected $listeners = array();
 
-    protected function __construct() { }
+    protected function __construct()
+    {
+    }
 
     public static function getInstance()
     {
@@ -26,7 +27,7 @@ class Dispatcher
 
     public static function subscribe($object, $subscriber)
     {
-        $instance = Dispatcher::getInstance();
+        $instance = self::getInstance();
         $id = spl_object_hash($object);
 
         $instance->listeners[$id][] = $subscriber;
@@ -34,12 +35,12 @@ class Dispatcher
 
     public static function publish($object, $i)
     {
-        $instance = Dispatcher::getInstance();
+        $instance = self::getInstance();
         $id = spl_object_hash($object);
 
         $subscribers = $instance->listeners[$id];
 
-        foreach($subscribers as $subscriber) {
+        foreach ($subscribers as $subscriber) {
             $i = $subscriber->addOneAndEcho($i);
         }
     }

@@ -1,4 +1,6 @@
-<?php use Aura\Html\Escaper as e; ?>
+<?php use Aura\Html\Escaper as e;
+
+?>
 
 <div class="blog-intro">
     <h2><?= e::h($blog->title) ?></h2>

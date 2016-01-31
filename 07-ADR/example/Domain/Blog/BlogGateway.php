@@ -1,4 +1,5 @@
 <?php
+
 namespace Domain\Blog;
 
 class BlogGateway
@@ -69,6 +70,7 @@ class BlogGateway
             WHERE id = :id',
             $entity->getData()
         );
+
         return (bool) $affected;
     }
 
@@ -78,6 +80,7 @@ class BlogGateway
             'DELETE FROM blog WHERE id = :id',
             array('id' => $entity->id)
         );
+
         return (bool) $affected;
     }
 }

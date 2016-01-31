@@ -1,4 +1,5 @@
 <?php
+
 namespace Domain\Blog;
 
 class BlogEntity
@@ -26,6 +27,7 @@ class BlogEntity
     public function getData()
     {
         $properties = get_object_vars($this);
+
         return $properties;
     }
 }

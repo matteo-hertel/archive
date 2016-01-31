@@ -1,4 +1,5 @@
 <?php
+
 namespace Web;
 
 use Aura\View\View;
@@ -33,7 +34,7 @@ abstract class AbstractResponder
 
     protected function init()
     {
-        if (! isset($this->payload_method['Domain\Payload\Error'])) {
+        if (!isset($this->payload_method['Domain\Payload\Error'])) {
             $this->payload_method['Domain\Payload\Error'] = 'error';
         }
     }
@@ -45,6 +46,7 @@ abstract class AbstractResponder
                 ? $this->payload_method[$class]
                 : 'notRecognized';
         $this->$method();
+
         return $this->response;
     }
 
@@ -58,25 +60,28 @@ abstract class AbstractResponder
         $domain_status = $this->payload->get('status');
         $this->response->status->set(500);
         $this->response->content->set("Unknown domain payload status: '$domain_status'");
+
         return $this->response;
     }
 
     protected function negotiateMediaType()
     {
-        if (! $this->available || ! $this->accept) {
+        if (!$this->available || !$this->accept) {
             return true;
         }
 
         $available = array_keys($this->available);
         $media = $this->accept->negotiateMedia($available);
-        if (! $media) {
+        if (!$media) {
             $this->response->status->set(406);
             $this->response->content->setType('text/plain');
             $this->response->content->set(implode(',', $available));
+
             return false;
         }
 
         $this->response->content->setType($media->getValue());
+
         return true;
     }
 
@@ -95,7 +100,7 @@ abstract class AbstractResponder
     protected function notFound()
     {
         $this->response->status->set(404);
-        $this->response->content->set("<html><head><title>404 Not found</title></head><body>404 Not found</body></html>");
+        $this->response->content->set('<html><head><title>404 Not found</title></head><body>404 Not found</body></html>');
     }
 
     protected function error()

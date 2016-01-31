@@ -1,4 +1,5 @@
 <?php
+
 namespace Blog\Responder;
 
 use AbstractResponder;
@@ -26,7 +27,7 @@ abstract class AbstractBlogResponder extends AbstractResponder
         foreach ($view_names as $name) {
             $view_registry->set(
                 $name,
-                __DIR__ . "/views/{$name}.php"
+                __DIR__."/views/{$name}.php"
             );
         }
     }

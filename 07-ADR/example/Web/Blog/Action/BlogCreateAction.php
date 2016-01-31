@@ -1,4 +1,5 @@
 <?php
+
 namespace Web\Blog\Action;
 
 use Aura\Web\Request;
@@ -26,6 +27,7 @@ class BlogCreateAction
         $data = $this->request->post->get('blog');
         $payload = $this->domain->create($data);
         $this->responder->setPayload($payload);
+
         return $this->responder->__invoke();
     }
 }

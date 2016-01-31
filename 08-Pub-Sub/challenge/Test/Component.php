@@ -1,7 +1,7 @@
 <?php
 
 namespace Test;
-use Symfony\Component\EventDispatcher\EventDispatcher;
+
 use Symfony\Component\EventDispatcher\Event;
 
 class Component extends Event
@@ -16,8 +16,8 @@ class Component extends Event
 
     public function addOneAndEcho()
     {
-        $this->i++;
-        echo $this->i . '-' . $this->name . '<br />';
+        ++$this->i;
+        echo $this->i.'-'.$this->name.'<br />';
     }
 }
 class ComponentWithEvents extends Event
@@ -32,15 +32,16 @@ class ComponentWithEvents extends Event
 
     public function addOneAndEcho()
     {
-        $this->i++;
-        echo $this->i . '-' . $this->name . '<br />';
+        ++$this->i;
+        echo $this->i.'-'.$this->name.'<br />';
         $this->fireEvent();
     }
 
-    private function fireEvent(){
+    private function fireEvent()
+    {
         global $dispatcher;
 
-        $dispatcher->dispatch("event", new Component("Component D", 20));
-        $dispatcher->dispatch("event", new Component("Component E", 21));
+        $dispatcher->dispatch('event', new Component('Component D', 20));
+        $dispatcher->dispatch('event', new Component('Component E', 21));
     }
 }

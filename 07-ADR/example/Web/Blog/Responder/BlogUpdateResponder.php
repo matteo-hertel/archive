@@ -1,4 +1,5 @@
 <?php
+
 namespace Blog\Responder;
 
 class BlogUpdateResponder extends AbstractBlogResponder
@@ -13,6 +14,7 @@ class BlogUpdateResponder extends AbstractBlogResponder
     protected function notValid()
     {
         $this->response->setStatus('422');
+
         return $this->renderView('edit');
     }
 
@@ -24,6 +26,7 @@ class BlogUpdateResponder extends AbstractBlogResponder
     protected function notUpdated()
     {
         $this->response->setStatus('500');
+
         return $this->renderView('edit');
     }
 }

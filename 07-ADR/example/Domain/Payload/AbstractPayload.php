@@ -1,4 +1,5 @@
 <?php
+
 namespace Domain\Payload;
 
 abstract class AbstractPayload implements PayloadInterface
@@ -20,6 +21,6 @@ abstract class AbstractPayload implements PayloadInterface
             return $this->payload[$key];
         }
 
-        return null;
+        return;
     }
 }
