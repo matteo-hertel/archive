@@ -1,14 +1,13 @@
 <?php
 
 /**
- * Copyright (c) 2014 Keith Casey
+ * Copyright (c) 2014 Keith Casey.
  *
  * This code is designed to accompany the lynda.com video course "Design Patterns in PHP"
  *   by Keith Casey. If you've received this code without seeing the videos, go watch the
  *   videos. It will make way more sense and be more useful in general.
  */
-
-class Notify
+class notify
 {
     protected $username = '';
     protected $password = '';
@@ -45,7 +44,7 @@ class Notify
     protected function sendEmail($to, $from, $body, $subject)
     {
         $sendgrid = new SendGrid('fake username2', 'fake password 2');
-        $email    = new SendGrid\Email($this->username, $this->password);
+        $email = new SendGrid\Email($this->username, $this->password);
         $email->addTo($to)->
             setFrom($from)->
             setSubject($subject)->

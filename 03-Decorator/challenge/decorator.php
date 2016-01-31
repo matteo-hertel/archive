@@ -1,14 +1,16 @@
 <?php
-class Decorator {
 
+class decorator
+{
     public $sentence;
 
-    public function lower(){
+    public function lower()
+    {
         return strtolower($this->sentence);
     }
 
-    public function upperCase(){
+    public function upperCase()
+    {
         return strtoupper($this->sentence);
     }
-
 }

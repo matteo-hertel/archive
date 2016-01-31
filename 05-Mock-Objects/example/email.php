@@ -1,14 +1,13 @@
 <?php
 
 /**
- * Copyright (c) 2014 Keith Casey
+ * Copyright (c) 2014 Keith Casey.
  *
  * This code is designed to accompany the lynda.com video course "Design Patterns in PHP"
  *   by Keith Casey. If you've received this code without seeing the videos, go watch the
  *   videos. It will make way more sense and be more useful in general.
  */
-
-class Email
+class email
 {
     protected $to = '';
     protected $from = '';
@@ -28,7 +27,7 @@ class Email
      */
     public function send()
     {
-        echo __CLASS__ . " - This would have sent an email.";
+        echo __CLASS__.' - This would have sent an email.';
         // mail($this->to, $this->subject, $this->body);
     }
 }
