@@ -10,4 +10,4 @@ Lesson from [Lynda.com](http://www.lynda.com/PHP-tutorials/Design-Patterns-PHP/1
 - ~~Pub-Sub~~
 - ~~Singleton~~
 - ~~Strategy~~
-- Table-Data
+- ~~Table-Data~~
