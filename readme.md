@@ -17,5 +17,6 @@ Lesson from [Laracast.com](https://laracasts.com/series/learning-vue-step-by-ste
 - ~~Managing Custom Events~~
 - ~~Custom Directives~~
 - ~~Vue Transitions and Animations~~
-- Managing Duplicate State
-- Swapping View-Specific Components
+- ~~Managing Duplicate State~~
+- ~~Swapping View-Specific Components~~
+- ~~Workflow for Swapping Components~~
