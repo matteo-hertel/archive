@@ -20,3 +20,4 @@ Lesson from [Laracast.com](https://laracasts.com/series/learning-vue-step-by-ste
 - ~~Managing Duplicate State~~
 - ~~Swapping View-Specific Components~~
 - ~~Workflow for Swapping Components~~
+- ~~Alert Component From Scratch~~
