@@ -7,6 +7,7 @@ class Helpers {
     public static function createArrayRange($num = false){
         //create and array that holds values from 1 to 100 
         $arrayRange = range(1, 100);
+
         //if no number is passed return the array
         if(!$num){
             return $arrayRange;
@@ -34,6 +35,7 @@ class Helpers {
                 return $i + 1;
             }
         }
-        return 0;
+        //if the number is not found the only missing is 100!
+        return 100;
     }
 }
