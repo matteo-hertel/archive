@@ -31,17 +31,3 @@ Although not timed, We estimate that the test should run for no more than 2 hour
 5. Once completed, please upload your work to GitHub and invite moin@appsumer.io to the repository. If you do not have a github account, please send the completed work to the same email address.
 
 
-
-
-
-function to create the array and filter it through:
-
-$num = 8;
-$result = array_filter(range(0, 10), function($item) use($num){
-    if((int)$num === (int)$item){
-            return false;
-            }
-            return true;
-            });
-            var_dump($result);
-
