@@ -10,11 +10,14 @@
                     <form class="form-horizontal" role="form" method="POST" action="{{ url('/test') }}">
                         {{ csrf_field() }}
 
-                        <div class="form-group{{ $errors->has('number') ? ' has-error' : '' }}">
+                        <div class="form-group{{ $errors->has('number') ? ' has-error validationError' : '' }}">
                             <label for="number" class="col-md-12">Number</label>
 
                             <div class="col-md-12">
-                                <input id="number" type="number" class="form-control" name="number" value="{{ old('number') }}">
+                                <input id="number" type="number" class="form-control" name="number" value="{{ old('number') }}"
+                                    data-min="1"
+                                    data-max="100"
+                                >
 
                                 @if ($errors->has('number'))
                                     <span class="help-block">

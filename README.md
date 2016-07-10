@@ -1,5 +1,7 @@
 # 201607LaravelTest
 
+##Brief
+
 This practical test has been designed to enable the candidate in demonstrating the following technical skills:
 
 1. The candidates knowledge of GitHub
@@ -31,3 +33,9 @@ Although not timed, We estimate that the test should run for no more than 2 hour
 5. Once completed, please upload your work to GitHub and invite moin@appsumer.io to the repository. If you do not have a github account, please send the completed work to the same email address.
 
 
+##Instructions
+
+Please note, the instructions are making the following assumptions:
+
+*   PHP is installed available in PATH and all the Laravel dependencies are met
+*   node, npm and gulp are installed and available in PATH
