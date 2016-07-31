@@ -1,0 +1,5 @@
+{
+    "autoload": {
+        "files": ["mh/MH_Config/MH_Config.php"]
+    }
+}
