@@ -1,0 +1,17 @@
+<dom-module id="listener-events">
+    <template>
+        <button on-click="clickHandler">Annotated</button>
+        <button id="btn">Listener</button>
+    </template>
+    <script>
+        Polymer({
+            is: "listener-events",
+            clickHandler: function() {
+                console.log("clicked");
+            },
+            listeners: {
+                "btn.click": "clickHandler"
+            }
+        });
+    </script>
+</dom-module>
