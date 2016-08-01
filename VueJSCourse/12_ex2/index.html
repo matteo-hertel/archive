@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content=" " />
+    <meta name="author" content=" " />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="MobileOptimized" content="320" />
+    <!-- Use maximum-scale and user-scalable at your own risk. It disables pinch/zoom. Think about usability/accessibility before including.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <style>
+        .completed {
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="demo" class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <alert type="success">
+                    <strong>Sucess!</strong> Better check yourself, you're looking too good.
+                </alert>
+                <alert type="danger">
+                    <strong>Danger!</strong> Better check yourself, you're looking too good.
+                </alert>
+                <alert type="warning">
+                    <strong>RUN!!</strong>
+                </alert>
+
+            </div>
+        </div>
+    </div>
+    <template id="alertTemplate">
+        <div class="alert alert-{{type}} alert-dismissible" role="alert">
+            <button type="button" class="close" aria-label="Close" @click="removeAlert">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <slot></slot>
+        </div>
+    </template>
+
+    <script type="text/javascript" src="/bower_components/vue/dist/vue.js"></script>
+    <script type="text/javascript" src="./source/js/app.js"></script>
+</body>
+
+</html>
