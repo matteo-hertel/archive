@@ -1,0 +1,26 @@
+{
+    "name": "RegExp Course",
+    "authors": [
+        "Matteo Hertel <info@matteohertel.com>"
+    ],
+    "description": "Source code for the RegExp course",
+    "main": "",
+    "moduleType": [],
+    "keywords": [
+        "VueJS",
+        "laracast"
+    ],
+    "license": "MIT",
+    "homepage": "http://matteohertel.com",
+    "private": true,
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "bootstrap": "~3.3.6"
+    }
+}

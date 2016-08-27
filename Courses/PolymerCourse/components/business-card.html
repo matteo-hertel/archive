@@ -1,0 +1,74 @@
+<dom-module id="business-card">
+    <template>
+        <style>
+            :host {
+                --bg-colour: #161616;
+            }
+
+            :host {
+                font-family: Courier;
+                width: 427px;
+                height: 320px;
+                display: inline-block;
+                background-color: var(--custom-bg-colour, --bg-colour);
+                border-radius: 10px;
+            }
+            /* ---------------------------- */
+
+            .front-info-name,
+            .front-info-jobtitle {
+                width: 300px;
+                margin: 0 auto;
+                text-align: center;
+                font-size: 18px;
+                color: #59ce34;
+                text-shadow: -1px 2px 4px #777;
+            }
+
+            .front-info-name {
+                margin-top: 90px;
+                font-size: 30px;
+            }
+
+            span {
+                display: inline-block;
+                font-size: 85px;
+                line-height: 85px;
+                text-shadow: 1px 2px 4px #777;
+            }
+        </style>
+        <div class="front-info">
+            <div class="front-info-name">
+                <span>[[initial(name)]]</span>[[noInitial(name)]]
+                <span>[[initial(surname)]]</span>[[noInitial(surname)]]</div>
+            <div class="front-info-jobtitle">[[position]]</div>
+        </div>
+
+
+    </template>
+    <script>
+        Polymer({
+            is: "business-card",
+            properties: {
+                name: {
+                    type: String,
+                    value: "John"
+                },
+                surname: {
+                    type: String,
+                    value: "Doe"
+                },
+                position: {
+                    type: String,
+                    value: "Placeholder"
+                },
+            },
+            initial: function(string) {
+                return string[0];
+            },
+            noInitial: function(string) {
+                return string.substring(1);
+            }
+        });
+    </script>
+</dom-module>
